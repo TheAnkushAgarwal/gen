@@ -20,10 +20,6 @@ import ssl
 import json
 import tempfile
 import time
-from dotenv import load_dotenv
-
-
-load_dotenv()
 
  
 # ts stores the time in seconds
@@ -36,9 +32,9 @@ ssl._create_default_https_context = ssl._create_unverified_context
 os.environ['REQUESTS_CA_BUNDLE'] = certifi.where()
 
 # Specify your AWS credentials and region
-aws_access_key_id = os.getenv('AWS_ACCESS_KEY_ID')
-aws_secret_access_key = os.getenv('AWS_SECRET_ACCESS_KEY')
-aws_region =os.getenv('AWS_REGION') 
+aws_access_key_id = st.secrets.aws_access_key_id
+aws_secret_access_key = st.secrets.aws_secret_access_key
+aws_region =st.secrets.aws_region
 
 # Initialize Streamlit app
 st.title("NarrativeVision Generator")
@@ -51,7 +47,7 @@ if st.button("Generate Video"):
     if text_script:
         st.write("Generating video, please wait...")
 
-        api_key =os.getenv('OPENAI_API_KEY')
+        api_key =st.secrets.openai_api_key
         client = OpenAI(api_key=api_key)
 
         no_of_image = 2

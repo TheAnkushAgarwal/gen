@@ -2,40 +2,50 @@ accelerate==0.0.1
 altair==5.2.0
 annotated-types==0.6.0
 anyio==4.2.0
-argcomplete @ file:///private/tmp/python-argcomplete-20231211-42231-mc1bv2/argcomplete-3.2.1
-autoscraper==1.1.14
-av==11.0.0
-beautifulsoup4==4.12.3
-bs4==0.0.2
-certifi @ file:///private/tmp/python-certifi-20231211-18102-76ipel/certifi-2023.11.17
-cffi @ file:///private/tmp/cffi-20231211-40239-j25k6o/cffi-1.16.0
+asgiref==3.7.2
+attrs==23.2.0
+audioread==3.0.1
+blinker==1.7.0
+boto3==1.34.27
+botocore==1.34.27
+cachetools==5.3.2
+certifi==2023.11.17
 charset-normalizer==3.3.2
-coloredlogs==15.0.1
-ctranslate2==4.0.0
-distlib @ file:///private/tmp/python-distlib-20231212-4938-trhlvy/distlib-0.3.8
+click==8.1.7
+decorator==4.4.2
+diffusers @ git+https://github.com/huggingface/diffusers@79df50388df09d9615e3c067695a453bb0a694c0
 distro==1.9.0
-faster-whisper==1.0.0
+Django==4.2.9
+dnspython==2.5.0
 ffmpeg==1.4
-ffmpeg-python==0.2.0
-filelock @ file:///private/tmp/python-filelock-20231112-5622-k62fq8/filelock-3.13.1/dist/filelock-3.13.1-py3-none-any.whl#sha256=57dbda9b35157b05fb3e58ee91448612eb674172fab98ee235ccb0b5bee19a1c
-flatbuffers==23.5.26
-fsspec==2024.2.0
-future==1.0.0
+filelock==3.13.1
+fsspec==2023.12.2
+gitdb==4.0.11
+GitPython==3.1.41
 h11==0.14.0
 httpcore==1.0.2
 httpx==0.26.0
-huggingface-hub==0.20.3
-humanfriendly==10.0
+huggingface-hub==0.20.2
 idna==3.6
-lxml==5.1.0
-mpmath==1.3.0
-numpy==1.26.4
-onnxruntime==1.17.0
+imageio==2.33.1
+imageio-ffmpeg==0.4.9
+importlib-metadata==7.0.1
+Jinja2==3.1.3
+jmespath==1.0.1
+jsonschema==4.20.0
+jsonschema-specifications==2023.12.1
+markdown-it-py==3.0.0
+MarkupSafe==2.1.3
+mdurl==0.1.2
+moviepy==1.0.3
+numpy==1.26.3
 openai==1.7.2
-packaging @ file:///private/tmp/python-packaging-20231211-10905-adsfgp/packaging-23.2
-platformdirs @ file:///private/tmp/python-platformdirs-20231204-5317-3q4okz/platformdirs-4.1.0
-protobuf==4.25.3
-pycparser @ file:///private/tmp/pycparser-20231211-25057-cypg40/pycparser-2.21
+packaging==23.2
+pandas==2.1.4
+pillow==10.2.0
+proglog==0.1.10
+protobuf==4.25.2
+pyarrow==14.0.2
 pydantic==2.5.3
 pydantic_core==2.14.6
 pydeck==0.8.1b0
@@ -57,11 +67,19 @@ setuptools==69.0.3
 six==1.16.0
 smmap==5.0.1
 sniffio==1.3.0
-soupsieve==2.5
-sympy==1.12
-tokenizers==0.15.2
+sqlparse==0.4.4
+streamlit==1.30.0
+tenacity==8.2.3
+tokenizers==0.15.0
+toml==0.10.2
+toolz==0.12.0
+tornado==6.4
 tqdm==4.66.1
 transformers==4.36.2
 twelvedata==1.2.12
 typing_extensions==4.9.0
-urllib3==2.2.1
+tzdata==2023.4
+tzlocal==5.2
+urllib3>=1.25.4,<1.27
+validators==0.22.0
+zipp==3.17.0

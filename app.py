@@ -50,7 +50,7 @@ if st.button("Generate Video"):
         api_key =st.secrets.openai_api_key
         client = OpenAI(api_key=api_key)
 
-        no_of_image = 2
+        no_of_image = 10
 
         response = client.chat.completions.create(
             model="gpt-3.5-turbo-1106",
@@ -202,4 +202,5 @@ st.write("1. Enter the text script for the video in the text area.")
 st.write("2. Click the 'Generate Video' button to create the AI-generated video.")
 st.write("3. The video video will be displayed, and you can download the audio separately.")
 st.write("4. You may get BadRequest Error. In that case just regenerate.")
+st.write("5. Text script has a limit of 4096 characters.")
 st.write("Please wait, it generally takes 5-10 minutes to generate the video.")
